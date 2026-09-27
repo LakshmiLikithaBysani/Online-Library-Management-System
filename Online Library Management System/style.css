@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #eef2f7;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* Filters */
+
+.filters {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.filters input,
+.filters select {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.stat-box {
+
+    flex: 1;
+
+    background: #f1f3f5;
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.stat-box h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.stat-box p {
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
+/* Member */
+
+.member-section {
+
+    margin-bottom: 25px;
+}
+
+.member-section label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.member-section input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+/* Books */
+
+.book-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.book-card {
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+}
+
+.book-card h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.book-card p {
+
+    margin: 7px 0;
+
+    color: #555;
+}
+
+
+/* Buttons */
+
+.book-card button {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.issue-btn {
+
+    background: #4caf50;
+
+    color: white;
+}
+
+.return-btn {
+
+    background: #ff9800;
+
+    color: white;
+}
+
+.book-card button:hover {
+
+    opacity: 0.85;
+}
+
+
+/* Message */
+
+#message {
+
+    text-align: center;
+
+    margin: 20px 0;
+
+    font-weight: bold;
+}
+
+
+/* Reset */
+
+#resetButton {
+
+    display: block;
+
+    margin: 20px auto 0;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #f44336;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+#resetButton:hover {
+
+    background: #d32f2f;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+}

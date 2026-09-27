@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Library Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Online Library</h1>
+
+        <!-- Search and Filter -->
+
+        <div class="filters">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 Search book..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="All">All Categories</option>
+                <option value="Programming">Programming</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Database">Database</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Available</h3>
+                <p id="availableBooks">0</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Issued</h3>
+                <p id="issuedBooks">0</p>
+            </div>
+
+        </div>
+
+
+        <!-- Issue Member -->
+
+        <div class="member-section">
+
+            <label>Member Name:</label>
+
+            <input
+                type="text"
+                id="memberName"
+                placeholder="Enter member name"
+            >
+
+        </div>
+
+
+        <!-- Book List -->
+
+        <div id="bookList" class="book-list"></div>
+
+
+        <!-- Message -->
+
+        <p id="message"></p>
+
+
+        <!-- Clear All -->
+
+        <button id="resetButton">
+            🔄 Reset Library
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
